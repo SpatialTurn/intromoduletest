@@ -16,6 +16,9 @@
     <loc>https://carpentries.github.io/workbench-template-md/aio.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/carpentry.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/citation.html</loc>
   </url>
   <url>
@@ -40,6 +43,9 @@
     <loc>https://carpentries.github.io/workbench-template-md/instructor/aio.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/carpentry.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/citation.html</loc>
   </url>
   <url>
@@ -61,6 +67,9 @@
     <loc>https://carpentries.github.io/workbench-template-md/instructor/profiles.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/qgisintro.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/reference.html</loc>
   </url>
   <url>
@@ -74,6 +83,9 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/qgisintro.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/reference.html</loc>
