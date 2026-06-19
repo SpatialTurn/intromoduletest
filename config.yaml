@@ -69,7 +69,7 @@ contact: 'team@carpentries.org' # FIXME
 episodes: 
 - introduction.md
 - qgisintro.md
-- carpentry.md
+#- carpentry.md
 
 # Information for Learners
 learners: 
