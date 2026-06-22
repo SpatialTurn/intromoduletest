@@ -237,7 +237,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Jupyter Notebook</a>
+        <a href="introduction.html">1. Jupyter Notebook Refresher</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -313,12 +313,12 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>All in One View</h1>
         
-<section id="aio-introduction"><p>Content from <a href="introduction.html">Jupyter Notebook</a></p>
+<section id="aio-introduction"><p>Content from <a href="introduction.html">Jupyter Notebook Refresher</a></p>
 <hr>
-<p>Last updated on 2026-06-19 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 45 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -330,11 +330,9 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What is a Jupyter Notebook and why is it useful for data
-science?</li>
-<li>How do I create and run code in a notebook?</li>
-<li>What are cells, and how do they work?</li>
-<li>What does it mean for a notebook to be “stateful”?</li>
+<li>Can I write and run Python code in a Jupyter Notebook?</li>
+<li>Do I understand how variables persist across cells?</li>
+<li>Can I create a basic plot?</li>
 </ul>
 </div>
 </div>
@@ -344,384 +342,58 @@ science?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Open a Jupyter Notebook using Google Colab</li>
-<li>Distinguish between code cells and Markdown cells</li>
-<li>Write and execute simple Python code in a notebook</li>
-<li>Understand how variables persist across cells (statefulness)</li>
-<li>Apply best practices for organizing notebooks</li>
+<li>Verify your Python and Jupyter skills before the workshop</li>
+<li>Complete three self-check exercises covering basic coding,
+variables, and plotting</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="what-is-a-jupyter-notebook">1. What Is a Jupyter Notebook?<a class="anchor" aria-label="anchor" href="#what-is-a-jupyter-notebook"></a>
+<section><h2 class="section-heading" id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
 <hr class="half-width">
-<p>A <strong>Jupyter Notebook</strong> is an interactive computing
-environment that allows you to combine:</p>
-<ul>
-<li>Code (Python)</li>
-<li>Text explanations</li>
-<li>Mathematical equations</li>
-<li>Tables and visualizations</li>
-<li>Results and outputs</li>
-</ul>
-<p>All in a single document.</p>
-<p>Jupyter Notebooks are especially useful for:</p>
-<ul>
-<li>Data exploration and analysis</li>
-<li>Teaching and learning Python</li>
-<li>Prototyping models</li>
-<li>Sharing reproducible research</li>
-</ul>
-<p>Instead of writing a script and running it all at once, you work in
-<strong>small, executable blocks called cells</strong>.</p>
-<hr></section><section><h2 class="section-heading" id="why-data-scientists-use-jupyter-notebooks">2. Why Data Scientists Use Jupyter Notebooks<a class="anchor" aria-label="anchor" href="#why-data-scientists-use-jupyter-notebooks"></a>
-</h2>
-<hr class="half-width">
-<p>Jupyter Notebooks support an <strong>iterative workflow</strong>:</p>
-<ol style="list-style-type: decimal">
-<li>Write a few lines of code</li>
-<li>Run them immediately</li>
-<li>Inspect the output</li>
-<li>Modify and rerun as needed</li>
-</ol>
-<div class="section level3">
-<h3 id="key-advantages">Key Advantages<a class="anchor" aria-label="anchor" href="#key-advantages"></a>
-</h3>
-<ul>
-<li>Immediate visualization of data</li>
-<li>Easy experimentation</li>
-<li>Built-in documentation using Markdown</li>
-<li>Reproducible analysis</li>
-<li>Simple sharing with collaborators</li>
-</ul>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="getting-started-opening-a-notebook">3. Getting Started: Opening a Notebook<a class="anchor" aria-label="anchor" href="#getting-started-opening-a-notebook"></a>
-</h2>
-<hr class="half-width">
-<p>You can use Jupyter Notebooks in several ways:</p>
-<ul>
-<li><p>Through <a href="https://www.anaconda.com/products/navigator" class="external-link">Anaconda
-Navigator</a>. Install the application, create an account, and launch
-<em>Jupyter Notebook</em>.</p></li>
-<li><p>Through <a href="https://colab.research.google.com" class="external-link">Google
-Colab</a>. You will need a Google account. Then create a new notebook in
-Drive.</p></li>
-</ul>
-<div class="section level3">
-<h3 id="quick-start-in-google-colab-easiest-for-beginners">Quick Start in Google Colab (easiest for beginners)<a class="anchor" aria-label="anchor" href="#quick-start-in-google-colab-easiest-for-beginners"></a>
-</h3>
-<ol style="list-style-type: decimal">
-<li>Go to <a href="https://colab.research.google.com" class="external-link uri">https://colab.research.google.com</a>
-</li>
-<li>Click <strong>File → New notebook</strong>
-</li>
-<li>You’re ready! No installation needed.</li>
-</ol>
-<p>Colab runs in the cloud — you only need a Google account and internet
-access.</p>
-<p><strong>Tip:</strong> The interface looks almost identical to classic
-Jupyter.</p>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="understanding-cells">4. Understanding Cells<a class="anchor" aria-label="anchor" href="#understanding-cells"></a>
-</h2>
-<hr class="half-width">
-<p>A Jupyter Notebook is composed of cells. Each cell performs a
-specific role.</p>
-<div class="section level3">
-<h3 id="code-cells">4.1 Code Cells<a class="anchor" aria-label="anchor" href="#code-cells"></a>
-</h3>
-<ul>
-<li>Used to write and execute Python code</li>
-<li>Output appears directly below the cell</li>
-</ul>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1" aria-label="code-block-1-2"></a>y <span class="op">=</span> <span class="dv">5</span></span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1" aria-label="code-block-1-3"></a>x <span class="op">+</span> y</span></code></pre>
-</div>
-</div>
-<div class="section level3">
-<h3 id="markdown-cells">4.2 Markdown Cells<a class="anchor" aria-label="anchor" href="#markdown-cells"></a>
-</h3>
-<ul>
-<li>Used for formatted text, headings, lists, and links</li>
-<li>Supports standard Markdown syntax</li>
-</ul>
-</div>
-<div class="section level3">
-<h3 id="raw-cells">4.3 Raw Cells<a class="anchor" aria-label="anchor" href="#raw-cells"></a>
-</h3>
-<ul>
-<li>Used infrequently</li>
-<li>Mostly for advanced formatting or export purposes</li>
-</ul>
-<p><strong>Note:</strong> Raw cells are not important for this
+<p>This page is a quick refresher, not a full tutorial. You should
+already be comfortable with basic Python — variables, data types,
+imports, and simple operations. If any of the exercises below feel
+unfamiliar, please review a Python fundamentals tutorial before the
 workshop.</p>
-<div class="section level4">
-<h4 id="try-it-now-in-a-new-notebook">Try it now (in a new notebook):<a class="anchor" aria-label="anchor" href="#try-it-now-in-a-new-notebook"></a>
-</h4>
-<p><strong>Code cell 1</strong></p>
-<div class="codewrapper sourceCode" id="cb2">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a>message <span class="op">=</span> <span class="st">"Hello, welcome to Jupyter!"</span></span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a><span class="bu">print</span>(message)</span></code></pre>
-</div>
-<p><strong>Code cell 2</strong></p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="bu">print</span>(message <span class="op">+</span> <span class="st">" We're going to have fun!"</span>)</span></code></pre>
-</div>
-<hr>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="running-cells">5. Running Cells<a class="anchor" aria-label="anchor" href="#running-cells"></a>
+<p>We will be using <a href="https://colab.research.google.com" class="external-link">Google
+Colab</a> for all notebook activities. Colab runs in your browser and
+requires no installation — just a Google account.</p>
+<hr></section><section><h2 class="section-heading" id="quick-reminders">Quick Reminders<a class="anchor" aria-label="anchor" href="#quick-reminders"></a>
 </h2>
 <hr class="half-width">
-<p>You can execute cells using keyboard shortcuts:</p>
-<ul>
-<li>
-<code>Shift + Enter</code> → Run cell and move to the next</li>
-<li>
-<code>Ctrl + Enter</code> → Run cell and stay in place</li>
-<li>
-<code>Alt + Enter</code> → Run cell and insert a new one below</li>
-</ul>
-<p><strong>Important:</strong> Cells do not need to be run from top to
-bottom, but execution order matters. Running cells out of order can lead
-to unexpected variable values.</p>
-<hr></section><section><h2 class="section-heading" id="the-notebook-kernel">6. The Notebook Kernel<a class="anchor" aria-label="anchor" href="#the-notebook-kernel"></a>
+<p><strong>Cells</strong> are the building blocks of a notebook. Code
+cells run Python; Markdown cells hold formatted text.</p>
+<p><strong>Running a cell:</strong> <code>Shift + Enter</code> runs the
+current cell and moves to the next.</p>
+<p><strong>Statefulness:</strong> The notebook kernel remembers
+variables across cells. If you run a cell that sets <code>x = 5</code>,
+every cell after that can use <code>x</code> — until you restart the
+kernel.</p>
+<p><strong>Restart &amp; Run All:</strong> Before sharing or submitting
+a notebook, always restart the kernel and run all cells from top to
+bottom to make sure everything works in order.</p>
+<hr></section><section><h2 class="section-heading" id="exercise-1-python-coding">Exercise 1: Python Coding<a class="anchor" aria-label="anchor" href="#exercise-1-python-coding"></a>
 </h2>
 <hr class="half-width">
-<p>The <strong>kernel</strong> is the computational engine that runs
-your code.</p>
-<p>For Python notebooks, the kernel:</p>
-<ul>
-<li>Executes Python code</li>
-<li>Stores variables in memory</li>
-<li>Can be restarted or interrupted</li>
-</ul>
-<div class="section level3">
-<h3 id="common-kernel-actions">Common Kernel Actions<a class="anchor" aria-label="anchor" href="#common-kernel-actions"></a>
-</h3>
-<ul>
-<li>
-<code>Restart Kernel</code> – Clears all variables from memory</li>
-<li>
-<code>Interrupt Kernel</code> – Stops long-running code</li>
-</ul>
-<p><strong>Best practice:</strong> Restart the kernel and run all cells
-before sharing a notebook. This ensures your code runs correctly from
-top to bottom.</p>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="exercise-1-python-coding">Exercise 1: Python Coding<a class="anchor" aria-label="anchor" href="#exercise-1-python-coding"></a>
-</h2>
-<hr class="half-width">
-<p>This exercise teaches you how to do basic coding in a Python Jupyter
-Notebook.</p>
-<p>Proceed to the activity:
-<a href="https://colab.research.google.com/github/SpatialTurn/DataCollection-Notebooks/blob/main/Census/Introduction_Python.ipynb" target="_blank" class="external-link">Here</a></p>
-<hr></section><section><h2 class="section-heading" id="variables-and-statefulness">7. Variables and Statefulness<a class="anchor" aria-label="anchor" href="#variables-and-statefulness"></a>
-</h2>
-<hr class="half-width">
-<p>Jupyter remembers variables <strong>across cells</strong> as long as
-the kernel is running.</p>
-<p>This is very powerful, but also the source of most beginner
-frustration.</p>
-<div class="section level3">
-<h3 id="demo-run-these-cells-one-by-one">Demo – run these cells one by one<a class="anchor" aria-label="anchor" href="#demo-run-these-cells-one-by-one"></a>
-</h3>
-<p><strong>Cell A</strong></p>
-<div class="codewrapper sourceCode" id="cb4">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a>temperature <span class="op">=</span> <span class="dv">20</span></span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a><span class="bu">print</span>(<span class="st">"Temperature is"</span>, temperature, <span class="st">"°C"</span>)</span></code></pre>
-</div>
-<p><strong>Cell B</strong></p>
-<div class="codewrapper sourceCode" id="cb5">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a>temperature <span class="op">=</span> temperature <span class="op">+</span> <span class="dv">5</span></span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1" aria-label="code-block-5-2"></a><span class="bu">print</span>(<span class="st">"New temperature:"</span>, temperature, <span class="st">"°C"</span>)</span></code></pre>
-</div>
-<p><strong>Cell C</strong></p>
-<div class="codewrapper sourceCode" id="cb6">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" tabindex="-1" aria-label="code-block-6-1"></a><span class="bu">print</span>(<span class="st">"What is the temperature now?"</span>, temperature)</span></code></pre>
-</div>
-<div id="challenge-variable-state" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<span class="callout-header">Discussion</span>
-<div id="challenge-variable-state" class="callout-inner">
-<h3 class="callout-title">Challenge — Variable State</h3>
-<div class="callout-content">
-<ol style="list-style-type: decimal">
-<li>Create 3 new code cells</li>
-<li>In cell 1: <code>count = 0</code>
-</li>
-<li>In cell 2: <code>count = count + 1; print(count)</code>
-</li>
-<li>In cell 3: <code>print("Final count:", count)</code>
-</li>
-<li>Run all three cells in order — cell 3 should print
-<code>1</code>
-</li>
-<li>Now run <strong>only cell 2</strong> five more times</li>
-<li>Run cell 3 again — what happened?</li>
-</ol>
-<p>You just experienced statefulness in action! The variable
-<code>count</code> persisted across cell executions, accumulating
-changes each time you ran cell 2.</p>
-</div>
-</div>
-</div>
-<hr>
-</div>
+<p>Covers basic syntax, printing, and simple operations.</p>
+<p><a href="https://colab.research.google.com/github/SpatialTurn/DataCollection-Notebooks/blob/main/Census/Introduction_Python.ipynb" target="_blank" class="external-link">Open
+Exercise 1 in Colab</a></p>
 </section><section><h2 class="section-heading" id="exercise-2-variable-handling">Exercise 2: Variable Handling<a class="anchor" aria-label="anchor" href="#exercise-2-variable-handling"></a>
 </h2>
 <hr class="half-width">
-<p>This exercise teaches you how data is stored and updated for a given
-variable in a Python Jupyter Notebook.</p>
-<p>Proceed to the activity:
-<a href="https://colab.research.google.com/github/SpatialTurn/DataCollection-Notebooks/blob/main/Census/Variables_Intro.ipynb" target="_blank" class="external-link">Here</a></p>
-<hr></section><section><h2 class="section-heading" id="working-with-data-in-jupyter">8. Working with Data in Jupyter<a class="anchor" aria-label="anchor" href="#working-with-data-in-jupyter"></a>
+<p>Covers how data is stored, updated, and reused across cells.</p>
+<p><a href="https://colab.research.google.com/github/SpatialTurn/DataCollection-Notebooks/blob/main/Census/Variables_Intro.ipynb" target="_blank" class="external-link">Open
+Exercise 2 in Colab</a></p>
+</section><section><h2 class="section-heading" id="exercise-3-python-plotting">Exercise 3: Python Plotting<a class="anchor" aria-label="anchor" href="#exercise-3-python-plotting"></a>
 </h2>
 <hr class="half-width">
-<p>Most data science workflows start by importing libraries and loading
-data.</p>
-<div class="codewrapper sourceCode" id="cb7">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" tabindex="-1" aria-label="code-block-7-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb7-2"><a href="#cb7-2" tabindex="-1" aria-label="code-block-7-2"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1" aria-label="code-block-7-3"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code></pre>
-</div>
-<div class="section level3">
-<h3 id="loading-data">Loading Data<a class="anchor" aria-label="anchor" href="#loading-data"></a>
-</h3>
-<div class="codewrapper sourceCode" id="cb8">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" tabindex="-1" aria-label="code-block-8-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"data.csv"</span>)</span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1" aria-label="code-block-8-2"></a>df.head()</span></code></pre>
-</div>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="visualization-inside-notebooks">9. Visualization Inside Notebooks<a class="anchor" aria-label="anchor" href="#visualization-inside-notebooks"></a>
-</h2>
-<hr class="half-width">
-<p>Plots are displayed inline, directly below the code cell.</p>
-<div class="codewrapper sourceCode" id="cb9">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" tabindex="-1" aria-label="code-block-9-1"></a>plt.plot([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>], [<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">30</span>])</span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1" aria-label="code-block-9-2"></a>plt.xlabel(<span class="st">"X values"</span>)</span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1" aria-label="code-block-9-3"></a>plt.ylabel(<span class="st">"Y values"</span>)</span>
-<span id="cb9-4"><a href="#cb9-4" tabindex="-1" aria-label="code-block-9-4"></a>plt.title(<span class="st">"Simple Line Plot"</span>)</span>
-<span id="cb9-5"><a href="#cb9-5" tabindex="-1" aria-label="code-block-9-5"></a>plt.show()</span></code></pre>
-</div>
-<p>This makes exploratory analysis fast and interactive.</p>
-<hr></section><section><h2 class="section-heading" id="exercise-3-python-plotting">Exercise 3: Python Plotting<a class="anchor" aria-label="anchor" href="#exercise-3-python-plotting"></a>
-</h2>
-<hr class="half-width">
-<p>This exercise teaches you how to create plots in a Python Jupyter
-Notebook.</p>
-<p>Proceed to the activity:
-<a href="https://colab.research.google.com/github/SpatialTurn/DataCollection-Notebooks/blob/main/Census/Intro_Ploting.ipynb" target="_blank" class="external-link">Here</a></p>
-<hr></section><section><h2 class="section-heading" id="using-markdown-for-documentation">10. Using Markdown for Documentation<a class="anchor" aria-label="anchor" href="#using-markdown-for-documentation"></a>
-</h2>
-<hr class="half-width">
-<p>Well-written notebooks tell a <strong>story</strong>.</p>
-<p>Use Markdown cells to:</p>
-<ul>
-<li>Explain your approach</li>
-<li>Describe datasets</li>
-<li>Interpret results</li>
-<li>Organize sections with headings</li>
-</ul>
-<div class="section level3">
-<h3 id="example-notebook-structure">Example Notebook Structure<a class="anchor" aria-label="anchor" href="#example-notebook-structure"></a>
-</h3>
-<ol style="list-style-type: decimal">
-<li>Title and Introduction</li>
-<li>Dataset Overview</li>
-<li>Data Cleaning</li>
-<li>Visualization</li>
-<li>Key Findings</li>
-</ol>
-<p>This improves readability for both technical and non-technical
-audiences.</p>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="best-practices-and-common-pitfalls">11. Best Practices and Common Pitfalls<a class="anchor" aria-label="anchor" href="#best-practices-and-common-pitfalls"></a>
-</h2>
-<hr class="half-width">
-<div class="section level3">
-<h3 id="organizing-your-notebook">Organizing Your Notebook<a class="anchor" aria-label="anchor" href="#organizing-your-notebook"></a>
-</h3>
-<ul>
-<li>Keep notebooks focused on a single task</li>
-<li>Use clear section headers with Markdown cells</li>
-<li>Put all <code>import</code> statements in the first code cell</li>
-<li>Keep cells short (5–15 lines each) — one logical step per cell</li>
-<li>Use descriptive file names</li>
-<li>Move reusable code into <code>.py</code> files as projects grow</li>
-</ul>
-</div>
-<div class="section level3">
-<h3 id="avoiding-common-mistakes">Avoiding Common Mistakes<a class="anchor" aria-label="anchor" href="#avoiding-common-mistakes"></a>
-</h3>
-<ul>
-<li>
-<strong>Running cells out of order</strong> can give variables
-unexpected values. Fix this by selecting <strong>Kernel → Restart &amp;
-Run All</strong> regularly.</li>
-<li>
-<strong>Forgetting to import libraries</strong> after restarting the
-kernel causes <code>NameError</code>. Always keep imports in the first
-cell.</li>
-<li>
-<strong>No Markdown explanations</strong> makes notebooks difficult
-to revisit. Add context before and after important code blocks.</li>
-<li>
-<strong>Sharing without restarting</strong> means collaborators may
-see missing variables or wrong results. Always do <strong>Kernel →
-Restart &amp; Run All</strong> before sharing or exporting.</li>
-<li>
-<strong>Assuming outputs are permanent</strong> — outputs disappear
-on kernel restart. Rely on your code, not on saved output.</li>
-</ul>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="troubleshooting">Troubleshooting<a class="anchor" aria-label="anchor" href="#troubleshooting"></a>
-</h2>
-<hr class="half-width">
-<ul>
-<li>
-<strong>Colab:</strong> Plots not showing? Add
-<code>%matplotlib inline</code> at the top of your notebook (usually
-automatic in Colab).</li>
-<li>
-<strong>Local Jupyter:</strong> “Package not found” error? Open a
-terminal or a code cell and run
-<code>!pip install package_name</code>.</li>
-<li>
-<strong>Need help?</strong> Raise your hand during the
-workshop.</li>
-</ul>
+<p>Covers creating basic charts with matplotlib.</p>
+<p><a href="https://colab.research.google.com/github/SpatialTurn/DataCollection-Notebooks/blob/main/Census/Intro_Ploting.ipynb" target="_blank" class="external-link">Open
+Exercise 3 in Colab</a></p>
 <hr>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -731,16 +403,11 @@ workshop.</li>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>Jupyter Notebooks let you combine code, output, and documentation in
-a single interactive document.</li>
-<li>Notebooks are made up of cells — code cells run Python, Markdown
-cells hold formatted text.</li>
-<li>The kernel remembers variables across cells (statefulness), so
-execution order matters.</li>
-<li>Always restart the kernel and run all cells before sharing a
-notebook.</li>
-<li>Good notebooks use short cells, clear headings, and Markdown
-explanations to tell a story.</li>
+<li>Jupyter Notebooks let you run Python code in small, interactive
+cells.</li>
+<li>Variables persist across cells — execution order matters.</li>
+<li>If all three exercises felt comfortable, you are ready for the
+workshop.</li>
 </ul>
 </div>
 </div>
