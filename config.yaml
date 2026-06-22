@@ -66,10 +66,10 @@ contact: 'team@carpentries.org' # FIXME
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
-- introduction.md
+episodes:
+- platforms.md 
 - qgisintro.md
-#- carpentry.md
+- introduction.md
 
 # Information for Learners
 learners: 
