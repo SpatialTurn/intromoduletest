@@ -1,5 +1,5 @@
 ---
-title: "Quantum GIS"
+title: "Quantum GIS Guide"
 teaching: 30 # teaching time in minutes
 exercises: 15 # exercise time in minutes
 ---
