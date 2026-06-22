@@ -312,32 +312,49 @@ any links that you are not going to use.
  --></tbody></table><p>
       The actual schedule may vary slightly depending on the topics and exercises chosen by the instructor.
       </p>
-      </section><section id="setup"><p>FIXME: Setup instructions live in this document. Please specify the
-tools and the data sets the Learner needs to have installed.</p>
-<section><h2 class="section-heading" id="data-sets">Data Sets<a class="anchor" aria-label="anchor" href="#data-sets"></a></h2>
-<hr class="half-width"><!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
---><p>Download the <a href="https://example.com/FIXME" class="external-link">data zip file</a>
-and unzip it to your Desktop</p>
-</section><section><h2 class="section-heading" id="software-setup">Software Setup<a class="anchor" aria-label="anchor" href="#software-setup"></a></h2>
-<hr class="half-width"><div id="details" class="callout discussion">
+      </section><section id="setup"><p>Please complete the following steps <strong>before the workshop
+begins</strong>. This should take about 15–20 minutes. If you run into
+trouble, we will have helpers available on the morning of Day 1.</p>
+<hr><section><h2 class="section-heading" id="accounts-to-create">Accounts to Create<a class="anchor" aria-label="anchor" href="#accounts-to-create"></a></h2>
+<hr class="half-width"><p>You will need accounts on the following platforms (all free):</p>
+<ul><li>
+<strong>Google Account</strong> — for <a href="https://colab.research.google.com" class="external-link">Google Colab</a> (Python
+notebooks)</li>
+<li>
+<strong>GitHub Account</strong> — for accessing and sharing workshop
+materials → <a href="https://github.com/join" class="external-link">Sign up here</a>
+</li>
+<li>
+<strong>USGS EarthExplorer Account</strong> — for downloading
+satellite imagery and elevation data → <a href="https://ers.cr.usgs.gov/register" class="external-link">Register here</a>
+</li>
+<li>
+<strong>Copernicus Data Space Account</strong> — for accessing
+Sentinel satellite data → <a href="https://dataspace.copernicus.eu" class="external-link">Register here</a>
+</li>
+<li>
+<strong>Census API</strong> - for accessing census data through
+python workflows → <a href="https://api.census.gov/data/key_signup.html" class="external-link">Get One here</a>
+</li>
+</ul><div id="tip" class="callout">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="bell"></i>
 </div>
-<span class="callout-header">Discussion</span>
-<div id="details" class="callout-inner">
-<h3 class="callout-title">Details</h3>
+<span class="callout-header">Callout</span>
+<div id="tip" class="callout-inner">
+<h3 class="callout-title">Tip</h3>
 <div class="callout-content">
-<p>Setup for different systems can be presented in dropdown menus via a
-<code>spoiler</code> tag. They will join to this discussion block, so
-you can give a general overview of the software used in this lesson here
-and fill out the individual operating systems (and potentially add more,
-e.g. online setup) in the solutions blocks.</p>
+<p>Some accounts (especially USGS and Copernicus) may take a few minutes
+to verify by email. Please do this ahead of time so you are not waiting
+during the workshop.</p>
 </div>
 </div>
 </div>
+<hr></section><section><h2 class="section-heading" id="software-to-install">Software to Install<a class="anchor" aria-label="anchor" href="#software-to-install"></a></h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="qgis-required">QGIS (Required)<a class="anchor" aria-label="anchor" href="#qgis-required"></a></h3>
+<p>QGIS is the GIS software we will use on Day 1 for mapping, raster
+analysis, and visualization.</p>
 <div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
@@ -348,8 +365,13 @@ e.g. online setup) in the solutions blocks.</p>
 </button>
 <div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
-<p>Use PuTTY</p>
-</div>
+<ol style="list-style-type: decimal"><li>Go to <a href="https://qgis.org/download/" class="external-link">https://qgis.org/download/</a>
+</li>
+<li>Under <strong>Windows</strong>, download the <strong>Long Term
+Release (LTR) Standalone Installer</strong>
+</li>
+<li>Run the installer and keep the default settings</li>
+</ol></div>
 </div>
 </div>
 </div>
@@ -358,36 +380,120 @@ e.g. online setup) in the solutions blocks.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
   <h3 class="accordion-header" id="headingSpoiler2">
   <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  MacOS
+  macOS
   </h3>
 </button>
 <div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
-<p>Use Terminal.app</p>
+<ol style="list-style-type: decimal"><li>Go to <a href="https://qgis.org/download/" class="external-link">https://qgis.org/download/</a>
+</li>
+<li>Download the <strong>macOS</strong> package for the Long Term
+Release (LTR)</li>
+<li>Open the <code>.dmg</code> file and drag QGIS to your Applications
+folder</li>
+</ol></div>
 </div>
 </div>
 </div>
-</div>
-<div id="accordionSpoiler3" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler3" aria-expanded="false" aria-controls="collapseSpoiler3">
-  <h3 class="accordion-header" id="headingSpoiler3">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  Linux
-  </h3>
-</button>
-<div id="collapseSpoiler3" class="accordion-collapse collapse" aria-labelledby="headingSpoiler3" data-bs-parent="#accordionSpoiler3">
-<div class="accordion-body">
-<p>Use Terminal</p>
-</div>
-</div>
-</div>
-</div>
-<!--
+<p>After installing, open QGIS Desktop to confirm it launches
+correctly.</p>
+<hr></div>
+<div class="section level3">
+<h3 id="google-colab-no-installation-needed">Google Colab (No Installation Needed)<a class="anchor" aria-label="anchor" href="#google-colab-no-installation-needed"></a></h3>
+<p>We will use <a href="https://colab.research.google.com" class="external-link">Google
+Colab</a> for all Python notebook activities. Colab runs in your browser
+— there is nothing to install. Just make sure you can sign in with your
+Google account and open a new notebook.</p>
+<p>The Python libraries we will use (pandas, NumPy, matplotlib,
+GeoPandas) are pre-installed in Colab.</p>
+<hr></div>
+<div class="section level3">
+<h3 id="web-browser">Web Browser<a class="anchor" aria-label="anchor" href="#web-browser"></a></h3>
+<p>A modern web browser (Chrome, Firefox, or Edge) is required for
+Google Colab, EarthExplorer, Copernicus, and the Esri Sentinel-2
+Explorer.</p>
+<hr></div>
+</section><section><h2 class="section-heading" id="data-files">Data Files<a class="anchor" aria-label="anchor" href="#data-files"></a></h2>
+<hr class="half-width"><p>Your instructors will provide all data files during the workshop. No
+downloads are needed beforehand.</p>
+<hr></section><section><h2 class="section-heading" id="workshop-schedule-at-a-glance">Workshop Schedule at a Glance<a class="anchor" aria-label="anchor" href="#workshop-schedule-at-a-glance"></a></h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="day-1">Day 1<a class="anchor" aria-label="anchor" href="#day-1"></a></h3>
+<table class="table"><colgroup><col width="40%"><col width="60%"></colgroup><thead><tr><th>Time</th>
+<th>Session</th>
+</tr></thead><tbody><tr><td>8:30 AM</td>
+<td>Breakfast (WALC 2051)</td>
+</tr><tr><td>9:00 AM</td>
+<td>Welcome and introductions (WALC 2127)</td>
+</tr><tr><td>9:45 AM</td>
+<td>Geospatial concepts and GIS ecosystems</td>
+</tr><tr><td>10:15 AM</td>
+<td>Coffee break</td>
+</tr><tr><td>10:30 AM</td>
+<td>
+<strong>Breakout 1a:</strong> Working with QGIS (WALC 2121)</td>
+</tr><tr><td></td>
+<td>
+<strong>Breakout 1b:</strong> Intro to Python Notebooks (WALC
+2127)</td>
+</tr><tr><td>12:30 PM</td>
+<td>Lunch (WALC 2051)</td>
+</tr><tr><td>1:15 PM</td>
+<td>
+<strong>Breakout 2a:</strong> Raster data and remote sensing (WALC
+2121)</td>
+</tr><tr><td></td>
+<td>
+<strong>Breakout 2b:</strong> Census data access and cleaning (WALC
+2127)</td>
+</tr><tr><td>2:45 PM</td>
+<td>Coffee break</td>
+</tr><tr><td>3:00 PM</td>
+<td>
+<strong>Breakout 3a:</strong> Satellite imagery analysis (WALC
+2121)</td>
+</tr><tr><td></td>
+<td>
+<strong>Breakout 3b:</strong> Analyzing Census data (WALC 2127)</td>
+</tr><tr><td>4:30 PM</td>
+<td>Group discussion (WALC 2127)</td>
+</tr><tr><td>6:00 PM</td>
+<td>Group dinner — Walt’s Pub &amp; Grill, 1050 Kalberer Rd, West
+Lafayette</td>
+</tr></tbody></table></div>
+<div class="section level3">
+<h3 id="day-2">Day 2<a class="anchor" aria-label="anchor" href="#day-2"></a></h3>
+<table class="table"><colgroup><col width="40%"><col width="60%"></colgroup><thead><tr><th>Time</th>
+<th>Session</th>
+</tr></thead><tbody><tr><td>8:30 AM</td>
+<td>Breakfast</td>
+</tr><tr><td>9:00 AM</td>
+<td>Day 2 introduction (WALC 2127)</td>
+</tr><tr><td>9:15 AM</td>
+<td>GIS data curation, sharing, and collaboration (Globus, FAIR
+standards, GitHub)</td>
+</tr><tr><td>11:00 AM</td>
+<td>Customizing Carpentries modules for classroom use</td>
+</tr><tr><td>12:30 PM</td>
+<td>Box lunch and 2027 workshop discussion (WALC 2051)</td>
+</tr></tbody></table><hr></div>
+</section><section><h2 class="section-heading" id="checklist">Checklist<a class="anchor" aria-label="anchor" href="#checklist"></a></h2>
+<hr class="half-width"><p>Use this checklist to make sure you are ready:</p>
+<ul class="task-list"><li><label><input type="checkbox">Google account created and can
+access <a href="https://colab.research.google.com" class="external-link">Colab</a></label></li>
+<li><label><input type="checkbox">GitHub account created</label></li>
+<li><label><input type="checkbox">USGS EarthExplorer account created
+and verified</label></li>
+<li><label><input type="checkbox">Copernicus Data Space account
+created and verified</label></li>
+<li><label><input type="checkbox">QGIS installed and opens
+successfully</label></li>
+<li><label><input type="checkbox">Successfully obtained Census API key
+and saved it <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- -->
-</section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
+ --></label></li>
+</ul></section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link float-end" href="../instructor/introduction.html" rel="next">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
@@ -437,9 +543,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/index.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/index.html",
-  "dateCreated": "2026-06-19",
-  "dateModified": "2026-06-19",
-  "datePublished": "2026-06-19"
+  "dateCreated": "2026-06-22",
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>
