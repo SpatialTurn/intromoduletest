@@ -237,7 +237,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Jupyter Notebook Refresher</a>
+        <a href="platforms.html">1. Data Platforms</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -249,7 +249,19 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="qgisintro.html">2. Quantum GIS</a>
+        <a href="qgisintro.html">2. Quantum GIS Guide</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="introduction.html">3. Jupyter Notebook Refresher</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -313,12 +325,12 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>All in One View</h1>
         
-<section id="aio-introduction"><p>Content from <a href="introduction.html">Jupyter Notebook Refresher</a></p>
+<section id="aio-platforms"><p>Content from <a href="platforms.html">Data Platforms</a></p>
 <hr>
 <p>Last updated on 2026-06-22 |
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/platforms.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -330,9 +342,9 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>Can I write and run Python code in a Jupyter Notebook?</li>
-<li>Do I understand how variables persist across cells?</li>
-<li>Can I create a basic plot?</li>
+<li>Where does geospatial and demographic data come from?</li>
+<li>Why do these platforms require accounts?</li>
+<li>How do these data sources connect to social science research?</li>
 </ul>
 </div>
 </div>
@@ -342,9 +354,8 @@
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Verify your Python and Jupyter skills before the workshop</li>
-<li>Complete three self-check exercises covering basic coding,
-variables, and plotting</li>
+<li>Understand what each data platform provides and why it matters</li>
+<li>Know which platform to use for a given type of data</li>
 </ul>
 </div>
 </div>
@@ -354,46 +365,74 @@ variables, and plotting</li>
 <section><h2 class="section-heading" id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
 <hr class="half-width">
-<p>This page is a quick refresher, not a full tutorial. You should
-already be comfortable with basic Python — variables, data types,
-imports, and simple operations. If any of the exercises below feel
-unfamiliar, please review a Python fundamentals tutorial before the
-workshop.</p>
-<p>We will be using <a href="https://colab.research.google.com" class="external-link">Google
-Colab</a> for all notebook activities. Colab runs in your browser and
-requires no installation — just a Google account.</p>
-<hr></section><section><h2 class="section-heading" id="quick-reminders">Quick Reminders<a class="anchor" aria-label="anchor" href="#quick-reminders"></a>
+<p>Throughout this workshop you will work with satellite imagery,
+elevation models, census demographics, and shared code. Each of these
+comes from a different platform, and each platform requires a free
+account so you can search, download, and use its data. This page
+explains what each platform offers and why it matters for social science
+research.</p>
+<hr></section><section><h2 class="section-heading" id="usgs-earthexplorer">USGS EarthExplorer<a class="anchor" aria-label="anchor" href="#usgs-earthexplorer"></a>
 </h2>
 <hr class="half-width">
-<p><strong>Cells</strong> are the building blocks of a notebook. Code
-cells run Python; Markdown cells hold formatted text.</p>
-<p><strong>Running a cell:</strong> <code>Shift + Enter</code> runs the
-current cell and moves to the next.</p>
-<p><strong>Statefulness:</strong> The notebook kernel remembers
-variables across cells. If you run a cell that sets <code>x = 5</code>,
-every cell after that can use <code>x</code> — until you restart the
-kernel.</p>
-<p><strong>Restart &amp; Run All:</strong> Before sharing or submitting
-a notebook, always restart the kernel and run all cells from top to
-bottom to make sure everything works in order.</p>
-<hr></section><section><h2 class="section-heading" id="exercise-1-python-coding">Exercise 1: Python Coding<a class="anchor" aria-label="anchor" href="#exercise-1-python-coding"></a>
+<p>👉 <a href="https://earthexplorer.usgs.gov" class="external-link">earthexplorer.usgs.gov</a></p>
+<p>EarthExplorer is run by the <strong>U.S. Geological Survey</strong>
+and is one of the largest public archives of remotely sensed data in the
+world. Through it you can access satellite imagery (Landsat, ASTER),
+aerial photography, and digital elevation models (DEMs) — all free of
+charge.</p>
+<p>In social science research this data is useful for studying land use
+change over time, urban sprawl, environmental justice, disaster impacts,
+and the physical geography of the communities you are analyzing. During
+the workshop we will use EarthExplorer to download elevation data and
+satellite scenes that we then visualize and analyze in QGIS.</p>
+<p>An account is required to download any data from the archive.</p>
+<hr></section><section><h2 class="section-heading" id="copernicus-data-space">Copernicus Data Space<a class="anchor" aria-label="anchor" href="#copernicus-data-space"></a>
 </h2>
 <hr class="half-width">
-<p>Covers basic syntax, printing, and simple operations.</p>
-<p><a href="https://colab.research.google.com/github/SpatialTurn/DataCollection-Notebooks/blob/main/Census/Introduction_Python.ipynb" target="_blank" class="external-link">Open
-Exercise 1 in Colab</a></p>
-</section><section><h2 class="section-heading" id="exercise-2-variable-handling">Exercise 2: Variable Handling<a class="anchor" aria-label="anchor" href="#exercise-2-variable-handling"></a>
+<p>👉 <a href="https://dataspace.copernicus.eu" class="external-link">dataspace.copernicus.eu</a></p>
+<p>Copernicus is the <strong>European Union’s Earth observation
+programme</strong>. Its Data Space provides free access to imagery from
+the Sentinel satellite constellation, which captures the entire Earth’s
+surface every few days at high resolution.</p>
+<p>Sentinel-2 imagery is especially valuable for monitoring vegetation
+health, water bodies, and land cover — all of which intersect with
+social science questions around agriculture, environmental policy, and
+community resilience. During the workshop we will use Sentinel-2 data
+alongside the Esri Sentinel-2 Explorer to visualize land use and land
+cover change.</p>
+<p>An account is required to search and download Sentinel datasets.</p>
+<hr></section><section><h2 class="section-heading" id="u-s--census-bureau-api">U.S. Census Bureau API<a class="anchor" aria-label="anchor" href="#u-s--census-bureau-api"></a>
 </h2>
 <hr class="half-width">
-<p>Covers how data is stored, updated, and reused across cells.</p>
-<p><a href="https://colab.research.google.com/github/SpatialTurn/DataCollection-Notebooks/blob/main/Census/Variables_Intro.ipynb" target="_blank" class="external-link">Open
-Exercise 2 in Colab</a></p>
-</section><section><h2 class="section-heading" id="exercise-3-python-plotting">Exercise 3: Python Plotting<a class="anchor" aria-label="anchor" href="#exercise-3-python-plotting"></a>
+<p>👉 <a href="https://www.census.gov/data/developers.html" class="external-link">census.gov/data/developers.html</a></p>
+<p>The Census Bureau API gives you programmatic access to the
+<strong>American Community Survey (ACS)</strong>, the <strong>Decennial
+Census</strong>, and dozens of other demographic datasets — directly
+from Python code, without manually downloading files.</p>
+<p>This is the backbone of quantitative social science research in the
+United States. With an API key you can pull population counts, income
+distributions, housing characteristics, and other variables at
+geographies ranging from the entire nation down to individual census
+tracts and block groups. During the workshop we will retrieve census
+data in a Jupyter Notebook, clean it, and produce maps and charts of
+population trends.</p>
+<p>An API key is free and is required for any programmatic data
+retrieval.</p>
+<hr></section><section><h2 class="section-heading" id="github">GitHub<a class="anchor" aria-label="anchor" href="#github"></a>
 </h2>
 <hr class="half-width">
-<p>Covers creating basic charts with matplotlib.</p>
-<p><a href="https://colab.research.google.com/github/SpatialTurn/DataCollection-Notebooks/blob/main/Census/Intro_Ploting.ipynb" target="_blank" class="external-link">Open
-Exercise 3 in Colab</a></p>
+<p>👉 <a href="https://github.com" class="external-link">github.com</a></p>
+<p>GitHub is a platform for <strong>version control and
+collaboration</strong> built on Git. It hosts code, documentation, and
+data files in repositories that can be shared, forked, and
+collaboratively edited.</p>
+<p>For this workshop, GitHub serves two purposes. First, the exercise
+notebooks and workshop materials are hosted in GitHub repositories, and
+Google Colab pulls directly from them. Second, on Day 2 we will discuss
+how to share research outputs, manage Carpentries lesson modules, and
+collaborate on code — all of which rely on GitHub.</p>
+<p>An account is required to fork repositories, contribute changes, and
+access certain materials.</p>
 <hr>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -403,11 +442,14 @@ Exercise 3 in Colab</a></p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>Jupyter Notebooks let you run Python code in small, interactive
-cells.</li>
-<li>Variables persist across cells — execution order matters.</li>
-<li>If all three exercises felt comfortable, you are ready for the
-workshop.</li>
+<li>USGS EarthExplorer provides free satellite imagery and elevation
+data for studying landscapes and environmental change.</li>
+<li>Copernicus Data Space offers high-resolution, frequently updated
+Sentinel imagery for land cover and vegetation analysis.</li>
+<li>The Census Bureau API enables programmatic access to U.S.
+demographic data at fine geographic scales.</li>
+<li>GitHub hosts the workshop materials and supports collaborative
+sharing of code and research outputs.</li>
 </ul>
 </div>
 </div>
@@ -416,9 +458,9 @@ workshop.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section><section id="aio-qgisintro"><p>Content from <a href="qgisintro.html">Quantum GIS</a></p>
+</section></section><section id="aio-qgisintro"><p>Content from <a href="qgisintro.html">Quantum GIS Guide</a></p>
 <hr>
-<p>Last updated on 2026-06-19 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/qgisintro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 45 minutes</p>
@@ -820,6 +862,109 @@ CSV, and raster formats.</li>
 categorized or graduated styles to highlight patterns.</li>
 <li>The Print Layout tool lets you compose and export professional maps
 with titles, legends, and scale bars.</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-introduction"><p>Content from <a href="introduction.html">Jupyter Notebook Refresher</a></p>
+<hr>
+<p>Last updated on 2026-06-22 |
+
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Can I write and run Python code in a Jupyter Notebook?</li>
+<li>Do I understand how variables persist across cells?</li>
+<li>Can I create a basic plot?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Verify your Python and Jupyter skills before the workshop</li>
+<li>Complete three self-check exercises covering basic coding,
+variables, and plotting</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
+</h2>
+<hr class="half-width">
+<p>This page is a quick refresher, not a full tutorial. You should
+already be comfortable with basic Python — variables, data types,
+imports, and simple operations. If any of the exercises below feel
+unfamiliar, please review a Python fundamentals tutorial before the
+workshop.</p>
+<p>We will be using <a href="https://colab.research.google.com" class="external-link">Google
+Colab</a> for all notebook activities. Colab runs in your browser and
+requires no installation — just a Google account.</p>
+<hr></section><section><h2 class="section-heading" id="quick-reminders">Quick Reminders<a class="anchor" aria-label="anchor" href="#quick-reminders"></a>
+</h2>
+<hr class="half-width">
+<p><strong>Cells</strong> are the building blocks of a notebook. Code
+cells run Python; Markdown cells hold formatted text.</p>
+<p><strong>Running a cell:</strong> <code>Shift + Enter</code> runs the
+current cell and moves to the next.</p>
+<p><strong>Statefulness:</strong> The notebook kernel remembers
+variables across cells. If you run a cell that sets <code>x = 5</code>,
+every cell after that can use <code>x</code> — until you restart the
+kernel.</p>
+<p><strong>Restart &amp; Run All:</strong> Before sharing or submitting
+a notebook, always restart the kernel and run all cells from top to
+bottom to make sure everything works in order.</p>
+<hr></section><section><h2 class="section-heading" id="exercise-1-python-coding">Exercise 1: Python Coding<a class="anchor" aria-label="anchor" href="#exercise-1-python-coding"></a>
+</h2>
+<hr class="half-width">
+<p>Covers basic syntax, printing, and simple operations.</p>
+<p><a href="https://colab.research.google.com/github/SpatialTurn/DataCollection-Notebooks/blob/main/Census/Introduction_Python.ipynb" target="_blank" class="external-link">Open
+Exercise 1 in Colab</a></p>
+</section><section><h2 class="section-heading" id="exercise-2-variable-handling">Exercise 2: Variable Handling<a class="anchor" aria-label="anchor" href="#exercise-2-variable-handling"></a>
+</h2>
+<hr class="half-width">
+<p>Covers how data is stored, updated, and reused across cells.</p>
+<p><a href="https://colab.research.google.com/github/SpatialTurn/DataCollection-Notebooks/blob/main/Census/Variables_Intro.ipynb" target="_blank" class="external-link">Open
+Exercise 2 in Colab</a></p>
+</section><section><h2 class="section-heading" id="exercise-3-python-plotting">Exercise 3: Python Plotting<a class="anchor" aria-label="anchor" href="#exercise-3-python-plotting"></a>
+</h2>
+<hr class="half-width">
+<p>Covers creating basic charts with matplotlib.</p>
+<p><a href="https://colab.research.google.com/github/SpatialTurn/DataCollection-Notebooks/blob/main/Census/Intro_Ploting.ipynb" target="_blank" class="external-link">Open
+Exercise 3 in Colab</a></p>
+<hr>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Jupyter Notebooks let you run Python code in small, interactive
+cells.</li>
+<li>Variables persist across cells — execution order matters.</li>
+<li>If all three exercises felt comfortable, you are ready for the
+workshop.</li>
 </ul>
 </div>
 </div>
