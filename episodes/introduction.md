@@ -1,5 +1,5 @@
 ---
-title: "Jupyter Notebook Refresher"
+title: "Python Notebook Refresher"
 teaching: 10
 exercises: 20
 ---
