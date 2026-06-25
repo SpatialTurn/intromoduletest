@@ -197,10 +197,10 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#accounts-to-create">Accounts to Create</a></li>
+        <ul><li><a href="#workshop-schedule-at-a-glance">Workshop Schedule at a Glance</a></li>
+<li><a href="#accounts-to-create">Accounts to Create</a></li>
 <li><a href="#software-to-install">Software to Install</a></li>
 <li><a href="#data-files">Data Files</a></li>
-<li><a href="#workshop-schedule-at-a-glance">Workshop Schedule at a Glance</a></li>
 <li><a href="#checklist">Checklist</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
@@ -297,108 +297,7 @@ any links that you are not going to use.
       <section id="setup"><p>Please complete the following steps <strong>before the workshop
 begins</strong>. This should take about 15–20 minutes. If you run into
 trouble, we will have helpers available on the morning of Day 1.</p>
-<hr><section><h2 class="section-heading" id="accounts-to-create">Accounts to Create<a class="anchor" aria-label="anchor" href="#accounts-to-create"></a></h2>
-<hr class="half-width"><p>You will need accounts on the following platforms (all free):</p>
-<ul><li>
-<strong>Google Account</strong> — for <a href="https://colab.research.google.com" class="external-link">Google Colab</a> (Python
-notebooks)</li>
-<li>
-<strong>GitHub Account</strong> — for accessing and sharing workshop
-materials → <a href="https://github.com/join" class="external-link">Sign up here</a>
-</li>
-<li>
-<strong>USGS EarthExplorer Account</strong> — for downloading
-satellite imagery and elevation data → <a href="https://ers.cr.usgs.gov/register" class="external-link">Register here</a>
-</li>
-<li>
-<strong>Copernicus Data Space Account</strong> — for accessing
-Sentinel satellite data → <a href="https://dataspace.copernicus.eu" class="external-link">Register here</a>
-</li>
-<li>
-<strong>Census API</strong> - for accessing census data through
-python workflows → <a href="https://api.census.gov/data/key_signup.html" class="external-link">Get One here</a>
-</li>
-</ul><div id="tip" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Callout</span>
-<div id="tip" class="callout-inner">
-<h3 class="callout-title">Tip</h3>
-<div class="callout-content">
-<p>Some accounts (especially USGS and Copernicus) may take a few minutes
-to verify by email. Please do this ahead of time so you are not waiting
-during the workshop.</p>
-</div>
-</div>
-</div>
-<hr></section><section><h2 class="section-heading" id="software-to-install">Software to Install<a class="anchor" aria-label="anchor" href="#software-to-install"></a></h2>
-<hr class="half-width"><div class="section level3">
-<h3 id="qgis-required">QGIS (Required)<a class="anchor" aria-label="anchor" href="#qgis-required"></a></h3>
-<p>QGIS is the GIS software we will use on Day 1 for mapping, raster
-analysis, and visualization.</p>
-<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
-  <h3 class="accordion-header" id="headingSpoiler1">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  Windows
-  </h3>
-</button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
-<div class="accordion-body">
-<ol style="list-style-type: decimal"><li>Go to <a href="https://qgis.org/download/" class="external-link">https://qgis.org/download/</a>
-</li>
-<li>Under <strong>Windows</strong>, download the <strong>Long Term
-Release (LTR) Standalone Installer</strong>
-</li>
-<li>Run the installer and keep the default settings</li>
-</ol></div>
-</div>
-</div>
-</div>
-<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
-  <h3 class="accordion-header" id="headingSpoiler2">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  macOS
-  </h3>
-</button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
-<div class="accordion-body">
-<ol style="list-style-type: decimal"><li>Go to <a href="https://qgis.org/download/" class="external-link">https://qgis.org/download/</a>
-</li>
-<li>Download the <strong>macOS</strong> package for the Long Term
-Release (LTR)</li>
-<li>Open the <code>.dmg</code> file and drag QGIS to your Applications
-folder</li>
-</ol></div>
-</div>
-</div>
-</div>
-<p>After installing, open QGIS Desktop to confirm it launches
-correctly.</p>
-<hr></div>
-<div class="section level3">
-<h3 id="google-colab-no-installation-needed">Google Colab (No Installation Needed)<a class="anchor" aria-label="anchor" href="#google-colab-no-installation-needed"></a></h3>
-<p>We will use <a href="https://colab.research.google.com" class="external-link">Google
-Colab</a> for all Python notebook activities. Colab runs in your browser
-— there is nothing to install. Just make sure you can sign in with your
-Google account and open a new notebook.</p>
-<p>The Python libraries we will use (pandas, NumPy, matplotlib,
-GeoPandas) are pre-installed in Colab.</p>
-<hr></div>
-<div class="section level3">
-<h3 id="web-browser">Web Browser<a class="anchor" aria-label="anchor" href="#web-browser"></a></h3>
-<p>A modern web browser (Chrome, Firefox, or Edge) is required for
-Google Colab, EarthExplorer, Copernicus, and the Esri Sentinel-2
-Explorer.</p>
-<hr></div>
-</section><section><h2 class="section-heading" id="data-files">Data Files<a class="anchor" aria-label="anchor" href="#data-files"></a></h2>
-<hr class="half-width"><p>Your instructors will provide all data files during the workshop. No
-downloads are needed beforehand.</p>
-<hr></section><section><h2 class="section-heading" id="workshop-schedule-at-a-glance">Workshop Schedule at a Glance<a class="anchor" aria-label="anchor" href="#workshop-schedule-at-a-glance"></a></h2>
+<hr><section><h2 class="section-heading" id="workshop-schedule-at-a-glance">Workshop Schedule at a Glance<a class="anchor" aria-label="anchor" href="#workshop-schedule-at-a-glance"></a></h2>
 <hr class="half-width"><div class="section level3">
 <h3 id="day-1">Day 1<a class="anchor" aria-label="anchor" href="#day-1"></a></h3>
 <table class="table"><colgroup><col width="40%"><col width="60%"></colgroup><thead><tr><th>Time</th>
@@ -462,7 +361,108 @@ Lafayette</td>
 </tr><tr><td>12:30 PM</td>
 <td>Box lunch (WALC 2124)</td>
 </tr></tbody></table><hr></div>
-</section><section><h2 class="section-heading" id="checklist">Checklist<a class="anchor" aria-label="anchor" href="#checklist"></a></h2>
+</section><section><h2 class="section-heading" id="accounts-to-create">Accounts to Create<a class="anchor" aria-label="anchor" href="#accounts-to-create"></a></h2>
+<hr class="half-width"><p>You will need accounts on the following platforms (all free):</p>
+<ul><li>
+<strong>Google Account</strong> — for <a href="https://colab.research.google.com" class="external-link">Google Colab</a> (Python
+notebooks)</li>
+<li>
+<strong>GitHub Account</strong> — for accessing and sharing workshop
+materials → <a href="https://github.com/join" class="external-link">Sign up here</a>
+</li>
+<li>
+<strong>USGS EarthExplorer Account</strong> — for downloading
+satellite imagery and elevation data → <a href="https://ers.cr.usgs.gov/register" class="external-link">Register here</a>
+</li>
+<li>
+<strong>Copernicus Data Space Account</strong> — for accessing
+Sentinel satellite data → <a href="https://dataspace.copernicus.eu" class="external-link">Register here</a>
+</li>
+<li>
+<strong>Census API</strong> - for accessing census data through
+python workflows → <a href="https://api.census.gov/data/key_signup.html" class="external-link">Get One here</a>
+</li>
+</ul><div id="tip" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="tip" class="callout-inner">
+<h3 class="callout-title">Tip</h3>
+<div class="callout-content">
+<p>Some accounts (especially USGS and Copernicus) may take a few minutes
+to verify by email. Please do this ahead of time so you are not waiting
+during the workshop.</p>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="software-to-install">Software to Install<a class="anchor" aria-label="anchor" href="#software-to-install"></a></h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="qgis-required">QGIS (Required)<a class="anchor" aria-label="anchor" href="#qgis-required"></a></h3>
+<p>QGIS is the GIS software we will use on Day 1 for mapping, raster
+analysis, and visualization.</p>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
+  Windows
+  </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div class="accordion-body">
+<ol style="list-style-type: decimal"><li>Go to <a href="https://qgis.org/download/" class="external-link">https://qgis.org/download/</a>
+</li>
+<li>Under <strong>Windows</strong>, download the <strong>Long Term
+Release (LTR) Standalone Installer</strong>
+</li>
+<li>Run the installer and keep the default settings</li>
+</ol></div>
+</div>
+</div>
+</div>
+<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
+  <h3 class="accordion-header" id="headingSpoiler2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
+  macOS
+  </h3>
+</button>
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
+<div class="accordion-body">
+<ol style="list-style-type: decimal"><li>Go to <a href="https://qgis.org/download/" class="external-link">https://qgis.org/download/</a>
+</li>
+<li>Download the <strong>macOS</strong> package for the Long Term
+Release (LTR)</li>
+<li>Open the <code>.dmg</code> file and drag QGIS to your Applications
+folder</li>
+</ol></div>
+</div>
+</div>
+</div>
+<p>After installing, open QGIS Desktop to confirm it launches
+correctly.</p>
+<hr></div>
+<div class="section level3">
+<h3 id="google-colab-no-installation-needed">Google Colab (No Installation Needed)<a class="anchor" aria-label="anchor" href="#google-colab-no-installation-needed"></a></h3>
+<p>We will use <a href="https://colab.research.google.com" class="external-link">Google
+Colab</a> for all Python notebook activities. Colab runs in your browser
+— there is nothing to install. Just make sure you can sign in with your
+Google account and open a new notebook.</p>
+<p>The Python libraries we will use (pandas, NumPy, matplotlib,
+GeoPandas) are pre-installed in Colab.</p>
+<hr></div>
+<div class="section level3">
+<h3 id="web-browser">Web Browser<a class="anchor" aria-label="anchor" href="#web-browser"></a></h3>
+<p>A modern web browser (Chrome, Firefox, or Edge) is required for
+Google Colab, EarthExplorer, Copernicus, and the Esri Sentinel-2
+Explorer.</p>
+<hr></div>
+</section><section><h2 class="section-heading" id="data-files">Data Files<a class="anchor" aria-label="anchor" href="#data-files"></a></h2>
+<hr class="half-width"><p>Your instructors will provide all data files during the workshop. No
+downloads are needed beforehand.</p>
+<hr></section><section><h2 class="section-heading" id="checklist">Checklist<a class="anchor" aria-label="anchor" href="#checklist"></a></h2>
 <hr class="half-width"><p>Use this checklist to make sure you are ready:</p>
 <ul class="task-list"><li><label><input type="checkbox">Google account created and can
 access <a href="https://colab.research.google.com" class="external-link">Colab</a></label></li>
