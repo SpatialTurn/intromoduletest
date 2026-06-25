@@ -6,6 +6,40 @@ Please complete the following steps **before the workshop begins**. This should 
 
 ---
 
+## Workshop Schedule at a Glance
+
+### Day 1
+
+| Time | Session |
+|------|---------|
+| 8:30 AM | Breakfast (WALC 2124) |
+| 9:00 AM | Welcome and introductions (WALC 2127) |
+| 9:45 AM | Geospatial concepts and GIS ecosystems |
+| 10:15 AM | Coffee break (WALC 2124)|
+| 10:30 AM | **Breakout 1a:** Working with QGIS (WALC 2121) |
+| | **Breakout 1b:** Intro to Python Notebooks (WALC 2127) |
+| 12:30 PM | Lunch (WALC 2051) |
+| 1:15 PM | **Breakout 2a:** Raster data and remote sensing (WALC 2121) |
+| | **Breakout 2b:** Census data access and cleaning (WALC 2127) |
+| 2:45 PM | Coffee break (WALC 2124)|
+| 3:00 PM | **Breakout 3a:** Satellite imagery analysis (WALC 2121) |
+| | **Breakout 3b:** Analyzing Census data (WALC 2127) |
+| 4:30 PM | Group discussion (WALC 2127) |
+| 6:00 PM | Group dinner — Walt's Pub & Grill, 1050 Kalberer Rd, West Lafayette |
+
+### Day 2
+
+| Time | Session |
+|------|---------|
+| 8:30 AM | Breakfast (WALC 2051)|
+| 9:00 AM | Day 2 introduction (WALC 2127) |
+| 9:15 AM | Teaching with Geospatial Brainstorming Session|
+| 10:15 AM | Coffee Break (WALC 2124) |
+| 10:45 AM | Customizing Carpentries modules for classroom use |
+| 12:00 PM | Closing Discussion; Preview 2027 modules development workshop|
+| 12:30 PM | Box lunch (WALC 2124) |
+---
+
 ## Accounts to Create
 
 You will need accounts on the following platforms (all free):
@@ -74,40 +108,6 @@ A modern web browser (Chrome, Firefox, or Edge) is required for Google Colab, Ea
 
 Your instructors will provide all data files during the workshop. No downloads are needed beforehand.
 
----
-
-## Workshop Schedule at a Glance
-
-### Day 1
-
-| Time | Session |
-|------|---------|
-| 8:30 AM | Breakfast (WALC 2124) |
-| 9:00 AM | Welcome and introductions (WALC 2127) |
-| 9:45 AM | Geospatial concepts and GIS ecosystems |
-| 10:15 AM | Coffee break (WALC 2124)|
-| 10:30 AM | **Breakout 1a:** Working with QGIS (WALC 2121) |
-| | **Breakout 1b:** Intro to Python Notebooks (WALC 2127) |
-| 12:30 PM | Lunch (WALC 2051) |
-| 1:15 PM | **Breakout 2a:** Raster data and remote sensing (WALC 2121) |
-| | **Breakout 2b:** Census data access and cleaning (WALC 2127) |
-| 2:45 PM | Coffee break (WALC 2124)|
-| 3:00 PM | **Breakout 3a:** Satellite imagery analysis (WALC 2121) |
-| | **Breakout 3b:** Analyzing Census data (WALC 2127) |
-| 4:30 PM | Group discussion (WALC 2127) |
-| 6:00 PM | Group dinner — Walt's Pub & Grill, 1050 Kalberer Rd, West Lafayette |
-
-### Day 2
-
-| Time | Session |
-|------|---------|
-| 8:30 AM | Breakfast (WALC 2051)|
-| 9:00 AM | Day 2 introduction (WALC 2127) |
-| 9:15 AM | Teaching with Geospatial Brainstorming Session|
-| 10:15 AM | Coffee Break (WALC 2124) |
-| 10:45 AM | Customizing Carpentries modules for classroom use |
-| 12:00 PM | Closing Discussion; Preview 2027 modules development workshop|
-| 12:30 PM | Box lunch (WALC 2124) |
 ---
 
 ## Checklist
