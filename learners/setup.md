@@ -107,7 +107,7 @@ Your instructors will provide all data files during the workshop. No downloads a
 | 10:15 AM | Coffee Break (WALC 2124) |
 | 10:45 AM | Customizing Carpentries modules for classroom use |
 | 12:00 PM | Closing Discussion; Preview 2027 modules development workshop|
-| 12:30 PM | Box lunch and 2027 workshop discussion (WALC 2124) |
+| 12:30 PM | Box lunch (WALC 2124) |
 ---
 
 ## Checklist
