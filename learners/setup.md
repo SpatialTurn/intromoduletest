@@ -103,10 +103,10 @@ Your instructors will provide all data files during the workshop. No downloads a
 |------|---------|
 | 8:30 AM | Breakfast (WALC 2051)|
 | 9:00 AM | Day 2 introduction (WALC 2127) |
-| 9:15 AM | Teaching with Geospatial |
+| 9:15 AM | Teaching with Geospatial Brainstorming Session|
 | 10:15 AM | Coffee Break (WALC 2124) |
 | 10:45 AM | Customizing Carpentries modules for classroom use |
-| 12:00 PM | Closing Discussion; Preview 2027 Modules |
+| 12:00 PM | Closing Discussion; Preview 2027 modules development workshop|
 | 12:30 PM | Box lunch and 2027 workshop discussion (WALC 2124) |
 ---
 
