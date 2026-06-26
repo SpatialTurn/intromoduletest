@@ -6,7 +6,7 @@ Please complete the following steps **before the workshop begins**. This should 
 
 ---
 
-## Workshop Schedule at a Glance
+## Workshop Schedule
 
 ### Day 1
 
