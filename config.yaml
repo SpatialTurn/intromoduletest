@@ -15,10 +15,10 @@
 carpentry: 'incubator'
 
 # Alt-text description of the lesson.
-carpentry_description: 'Lesson Description'
+carpentry_description: 'Install QGIS, set up Jupyter notebooks, and review workshop schedule'
 
 # Overall title for pages.
-title: 'Lesson Title' # FIXME
+title: 'First Steps' # FIXME
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: ~ # FIXME
@@ -29,7 +29,7 @@ keywords: 'software, data, lesson, The Carpentries' # FIXME
 # Life cycle stage of the lesson
 # refer to <https://docs.carpentries.org/resources/curriculum/lesson-life-cycle.html> for details
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'pre-alpha' # FIXME
+life_cycle: 'alpha' # FIXME
 
 # License of the lesson
 license: 'CC-BY 4.0'
@@ -41,7 +41,7 @@ source: 'https://github.com/carpentries/workbench-template-md' # FIXME
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org' # FIXME
+contact: 'ilindsay@purdue.edu' # FIXME
 
 # Navigation ------------------------------------------------
 #

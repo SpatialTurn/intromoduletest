@@ -40,6 +40,15 @@ Please complete the following steps **before the workshop begins**. This should 
 | 12:30 PM | Box lunch (WALC 2124) |
 ---
 
+## Data Files
+
+Make sure you have access to this shared [google drive folder](https://drive.google.com/drive/folders/1I5Rr3TaLPu4EHz8Bfe_3HKNPrzYwzL7B
+) which contains the data files that we will be using for the workshop. 
+
+Send in a request for access, preferably, before showing up to the workshop. 
+
+---
+
 ## Accounts to Create
 
 You will need accounts on the following platforms (all free):
@@ -101,12 +110,6 @@ The Python libraries we will use (pandas, NumPy, matplotlib, GeoPandas) are pre-
 ### Web Browser
 
 A modern web browser (Chrome, Firefox, or Edge) is required for Google Colab, EarthExplorer, Copernicus, and the Esri Sentinel-2 Explorer.
-
----
-
-## Data Files
-
-Your instructors will provide all data files during the workshop. No downloads are needed beforehand.
 
 ---
 
